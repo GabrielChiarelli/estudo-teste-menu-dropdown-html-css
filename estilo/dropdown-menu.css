@@ -1,3 +1,7 @@
+.menu {
+    position: relative;             /* garante que o submenu apareça por cima do conteúdo da página */
+}
+
 .dropdown-menu {
     display: flex;
     gap: 2px;
@@ -9,7 +13,7 @@
     width: 150px;                   /* 'width' e 'height' define o tamanho do botão */
     height: 50px;
 
-    list-style: none;
+    list-style: none;               /* remove aqueles 'pontinhos' que ficam no início dos itens */
 
     /*background-color: tomato; -- inserir cor para ver se os elementos estão centralizados. Remover depois */
 }
@@ -42,8 +46,8 @@
 }
 
 .dropdown-submenu {
-    margin-top: 1px;
-    display: none;              /* deixa o menu invisível quando não está ativado */
+    margin-top: 0px;            /* distância entre o menu e seus itens (deixei em 0 para evitar que o submenu sumisse ao passar o mouse por essa distância) */
+    display: none;              /* deixa o submenu invisível quando não está ativado */
 }
 
 .dropdown-submenu a {

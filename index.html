@@ -1,4 +1,4 @@
-<!-- Fiz esse Menu Dropdown seguindo o tutorial do Fernando Leonid: https://www.youtube.com/watch?v=kaNWJTz_3rI 06/04/2022 -->
+<!-- Fiz esse Menu Dropdown seguindo o tutorial do Fernando Leonid, mas realizando algumas pequenas modificações: https://www.youtube.com/watch?v=kaNWJTz_3rI 06/04/2022 -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de Menu Drop-Down</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="dropdown-menu.css">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/dropdown-menu.css">
 </head>
 <body>
-    <nav>
+    <nav class="menu">
         <ul class="dropdown-menu">
             <li><a href="#">Home</a></li>
             <li>
-                <a href="#">Menu 1 &#9660</a>
+                <a href="#">Menu 1 &#9660</a>               <!-- '&#9660' adiciona uma imagem de uma seta para baixo -->
                 <ul class="dropdown-submenu">
                     <li><a href="#">Submenu 1</a></li>
                     <li><a href="#">Submenu 2</a></li>
@@ -26,8 +26,8 @@
                 <a href="#">Menu 2 &#9660</a>
                 <ul class="dropdown-submenu">
                     <li><a href="#">Submenu 1</a></li>
-                    <li><a href="#">Submeny 2</a></li>
-                    <li><a href="#">Submenu 3</a></li>          <!-- '&#9660' adiciona uma imagem de uma seta para baixo -->
+                    <li><a href="#">Submenu 2</a></li>
+                    <li><a href="#">Submenu 3</a></li>
                 </ul>
             </li>
         </ul>
