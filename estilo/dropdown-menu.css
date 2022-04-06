@@ -1,0 +1,64 @@
+.dropdown-menu {
+    display: flex;
+    gap: 2px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dropdown-menu li {
+    width: 150px;                   /* 'width' e 'height' define o tamanho do botão */
+    height: 50px;
+
+    list-style: none;
+
+    /*background-color: tomato; -- inserir cor para ver se os elementos estão centralizados. Remover depois */
+}
+
+.dropdown-menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*display: block;*/
+    width: 100%;                    /* 'width' e 'height' diz o quanto do tamanho do botão o link deve ocupar */
+    height: 100%;
+
+    color: white;                 /* define a cor das letras do link */
+    font-size: 1rem;
+    text-decoration: none;          /* tira o 'sublinhado' dos links */
+
+    background-color: black;
+    transition: all 0.2s linear;
+}
+
+.dropdown-menu li:hover > a {
+    color: rgb(240, 240, 240);   /* muda a cor das letras do link ao passar o mouse por cima */
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li:hover > .dropdown-submenu {
+    display: block;             /* mostra o menu quando passamos o mouse por cima */
+}
+
+.dropdown-submenu {
+    margin-top: 1px;
+    display: none;              /* deixa o menu invisível quando não está ativado */
+}
+
+.dropdown-submenu a {
+    display: flex;
+    justify-content: flex-start;
+
+    border-left: 8px solid transparent;
+    padding-left: 15px;
+    width: 150%;
+
+    font-size: 0.9rem;
+    
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-submenu li:hover {
+    border-left: 8px solid black;            /* adiciona uma coluna como detalhe na esquerda do link */
+}
